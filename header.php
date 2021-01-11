@@ -1,8 +1,4 @@
 
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +21,9 @@
                 </div>
                 <nav id="menu-fix">
                     <ul>
-                        <li><a href="Index.html">Accueil</a></li>
-                        <li><a href="Hobby.html">Hobby</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="pages/index.php">Accueil</a></li>
+                        <li><a href="pages/hobby.php">Hobby</a></li>
+                        <li><a href="pages/contact.php">Contact</a></li>
                     </ul>
                 </nav>
             </div>
