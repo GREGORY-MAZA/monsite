@@ -1,4 +1,6 @@
 <?php
+$metaTitle = "Index GREG MAZA PAGE";
+$metaDescription = 'Bienvenue sur la page de mon CV en construction';
 require 'header.php';
 ?>
 

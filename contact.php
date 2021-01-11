@@ -1,4 +1,6 @@
 <?php
+$metaTitle = "Contact Page !";
+$metaDescription = 'Envoyez-moi un message !';
 require 'header.php';
 ?>
 
