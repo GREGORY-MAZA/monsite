@@ -1,4 +1,4 @@
-<?php
+
 
 <article>
 
@@ -20,4 +20,3 @@
 
 
             </article>
-?>

@@ -1,4 +1,4 @@
-<?php
+
 <footer>
 
             <div id="logo_footer">
@@ -17,4 +17,4 @@
 
 </body>
 </html>
-?>
+
