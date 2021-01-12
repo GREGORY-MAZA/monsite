@@ -1,4 +1,8 @@
-
+<?php
+$metaTitle = "Hobby Page !";
+$metaDescription = 'Hobbyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy !';
+require 'header.php';
+?>
 
 <article>
 
@@ -20,3 +24,6 @@
 
 
             </article>
+<?php
+require 'footer.php';
+?>

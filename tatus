@@ -1,0 +1,47 @@
+[33mcommit 7398bca53f512475d0ff98486b3850ab12da15d6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Tue Jan 12 11:53:06 2021 +0100
+
+    new index for front controller
+
+[33mcommit 91d41ef3d5212579c08a3944fdfa6392fa00a2a2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 16:39:54 2021 +0100
+
+    new folder pages
+
+[33mcommit b0e1aa8a67d128694d20a132f07be49ae4f5c72b[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 14:58:38 2021 +0100
+
+    add variables  and  all files
+
+[33mcommit 608262bc43dd95f7337eee4e6bd48e9d64881c64[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 12:13:36 2021 +0100
+
+    change title and add description on header php
+
+[33mcommit d90f31ebba77334777583cbbf3d00dd7dec30aab[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 11:57:01 2021 +0100
+
+    for all * integrated require in php files
+
+[33mcommit 7c0072d131c59338ca60eebd4d13e47357a7878a[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 11:55:16 2021 +0100
+
+    Modification php Files
+
+[33mcommit 3da22644328711ea3555f17cc1e9b4e6bffccc1f[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 10:16:04 2021 +0100
+
+    add php files
+
+[33mcommit c25add85500747b80c6b0aa96409addc1f0e0ac0[m
+Author: Greg MAZA <gregory.maza@le-campus-numerique.fr>
+Date:   Mon Jan 11 09:59:03 2021 +0100
+
+    v1.0

@@ -21,9 +21,9 @@
                 </div>
                 <nav id="menu-fix">
                     <ul>
-                        <li><a href="pages/index.php">Accueil</a></li>
-                        <li><a href="pages/hobby.php">Hobby</a></li>
-                        <li><a href="pages/contact.php">Contact</a></li>
+                        <li><a href="index.php?page=accueil">Accueil</a></li>
+                        <li><a href="index.php?page=hobby">Hobby</a></li>
+                        <li><a href="index.php?page=contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
