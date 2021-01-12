@@ -35,7 +35,7 @@ header
 {
 	display: flex;
 	justify-content: space-between;
-	background: linear-gradient(#A6E1F1,white,#F1D0F1);
+	background: linear-gradient(#a6e1f1,white,#F1D0F1);
 	width: 80%;
 	height: 320px;
 	align-items: center;
