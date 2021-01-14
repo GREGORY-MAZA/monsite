@@ -1,26 +1,32 @@
 <?php
 $metaTitle = "Contact Page !";
 $metaDescription = 'Envoyez-moi un message !';
-require 'header.php';
-$reponsecivi = filter_input(INPUT_POST, 'civi' );
-echo $reponsecivi;
-$repnom = filter_input( INPUT_POST,'Nom');
-echo $repnom;
-$repPrenom = filter_input(INPUT_POST, 'prénom' );
-echo $repPrenom;
-$repmail = filter_input(INPUT_POST, 'email' );
-echo $repmail;
-$raison = filter_input( INPUT_POST,'raison');
-echo $raison;
-$message = filter_input( INPUT_POST,'le-message');
-echo $message;
 
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repmail,FILE_APPEND);
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $reponsecivi, FILE_APPEND);
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repnom, FILE_APPEND);
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repPrenom, FILE_APPEND);
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $raison,FILE_APPEND);
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $message, FILE_APPEND);
+require 'header.php';
+
+//traitement si le formulaire est envoyé
+if (filter_has_var(INPUT_POST, 'email')) {
+    date_default_timezone_set('UTC');
+    $date = date('Y-m-d-H-i-s');
+
+    $reponsecivi = filter_input(INPUT_POST, 'civi');
+
+    $repnom = filter_input(INPUT_POST, 'Nom');
+
+    $repPrenom = filter_input(INPUT_POST, 'prénom');
+
+    $repmail = filter_input(INPUT_POST, 'email');
+
+    $raison = filter_input(INPUT_POST, 'raison');
+
+    $message = filter_input(INPUT_POST, 'le-message');
+// Si enregistrement sans erreur
+
+    $text = PHP_EOL . $date . PHP_EOL . $reponsecivi . PHP_EOL . $repnom . PHP_EOL . $repPrenom . PHP_EOL . $repmail . PHP_EOL . $raison . PHP_EOL . $message . PHP_EOL;
+    file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $text, FILE_APPEND);
+}
+
+
 
 ?>
 
