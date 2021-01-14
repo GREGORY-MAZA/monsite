@@ -8,7 +8,7 @@ require 'header.php';
 
     <h3>CONTACT</h3>
 
-    <form action="https://httpbin.org/post" method="post">
+    <form action="index.php?page=contact" method="post">
 
 
         <fieldset>
@@ -19,7 +19,21 @@ require 'header.php';
             <input type="radio" name="civi" value="Mr" /> Monsieur <br>
 
             Votre Nom :<br />
-            <input type="text" name="prenom"/><br>
+            <input type="text" name="Nom"/><br>
+
+            Votre Prénom :<br />
+            <input type="text" name="prénom"/><br>
+
+            Votre email :<br />
+            <input type="email" name="email"/><br>
+            <br>
+
+            Raison du contact :<br />
+            <br>
+            <input type="radio" name="raison" value="proposition d’emploi"/> Proposition d’emploi <br>
+            <input type="radio" name="raison" value="demande d’information"/> Demande d’information <br>
+            <input type="radio" name="raison" value="prestations"/> Prestations <br>
+            <br>
 
             Vous êtes :<br />
             <select name="profil" style="width: 300px; height: 40px;">
