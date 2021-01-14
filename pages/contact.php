@@ -2,6 +2,16 @@
 $metaTitle = "Contact Page !";
 $metaDescription = 'Envoyez-moi un message !';
 require 'header.php';
+$reponsecivi = filter_input(INPUT_POST, 'civi' );
+echo $reponsecivi;
+$repmail = filter_input(INPUT_POST, 'email' );
+echo $repmail;
+
+$repnom = filter_input( INPUT_POST,'Nom');
+echo $repnom;
+//file_put_contents(contact / contact_Y - m - d - H - i - s . txt, string)
+//file_put_contents (contact/contact_Y-m-d-H-i-s.txt) : string
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repmail);
 ?>
 
 <main id="MAINFORM">
@@ -46,8 +56,10 @@ require 'header.php';
             <input type="submit" name="Envoyer" style="width: 100px; height: 40px;">
 
         </fieldset>
+
     </form>
 </main>
+
 
 <?php
 require 'footer.php';
