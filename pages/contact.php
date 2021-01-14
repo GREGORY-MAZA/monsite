@@ -4,14 +4,24 @@ $metaDescription = 'Envoyez-moi un message !';
 require 'header.php';
 $reponsecivi = filter_input(INPUT_POST, 'civi' );
 echo $reponsecivi;
-$repmail = filter_input(INPUT_POST, 'email' );
-echo $repmail;
-
 $repnom = filter_input( INPUT_POST,'Nom');
 echo $repnom;
-//file_put_contents(contact / contact_Y - m - d - H - i - s . txt, string)
-//file_put_contents (contact/contact_Y-m-d-H-i-s.txt) : string
-file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repmail);
+$repPrenom = filter_input(INPUT_POST, 'prénom' );
+echo $repPrenom;
+$repmail = filter_input(INPUT_POST, 'email' );
+echo $repmail;
+$raison = filter_input( INPUT_POST,'raison');
+echo $raison;
+$message = filter_input( INPUT_POST,'le-message');
+echo $message;
+
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repmail,FILE_APPEND);
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $reponsecivi, FILE_APPEND);
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repnom, FILE_APPEND);
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repPrenom, FILE_APPEND);
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $raison,FILE_APPEND);
+file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $message, FILE_APPEND);
+
 ?>
 
 <main id="MAINFORM">
@@ -47,9 +57,9 @@ file_put_contents('contact/contact_Y-m-d-H-i-s.txt', $repmail);
 
             Vous êtes :<br />
             <select name="profil" style="width: 300px; height: 40px;">
-                <option value="parti">Un particulier</option>
-                <option value="profe">Un professionnel</option>
-                <option value="insti">Un institutionnel</option>
+                <option value="particulier">Un particulier</option>
+                <option value="professionnel">Un professionnel</option>
+                <option value="institutionnel">Un institutionnel</option>
             </select><br>
 
             <textarea name="le-message" rows="10" cols="70"></textarea>
