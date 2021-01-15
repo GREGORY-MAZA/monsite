@@ -1,9 +1,6 @@
-
-
 <?php
-
+date_default_timezone_set('UTC');
 $page = filter_input(INPUT_GET,'page',FILTER_SANITIZE_STRING);
-echo $page;
 if ($page) {
     if ($page == 'accueil') {
         include 'pages/accueil.php';
